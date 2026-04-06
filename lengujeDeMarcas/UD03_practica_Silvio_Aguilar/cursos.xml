@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE cursos SYSTEM "cursos.dtd">
+<cursos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="cursos.xsd">
+
+    <curso id="CUR001">
+    <nombre>Desarrollo Web</nombre>
+    <duracion>120</duracion>
+    <modulos>
+        <modulo codigo="DWEC01">Desarrollo Web en Entorno Cliente</modulo>
+        <modulo codigo="DWES01">Desarrollo Web en Entorno Servidor</modulo>
+        <modulo codigo="DAW01">Despliegue de Aplicaciones Web</modulo>
+    </modulos>
+    </curso>
+
+    <curso id="CUR002">
+        <nombre>Cyberseguridad</nombre>
+        <duracion>240</duracion>
+        <modulos>
+            <modulo codigo="CS01">Fundamentos de Ciberseguridad</modulo>
+            <modulo codigo="CS02">Seguridad en Redes</modulo>
+            <modulo codigo="CS03">Criptografía</modulo>
+            <modulo codigo="CS04">Gestión de Incidentes de Seguridad</modulo>
+        </modulos>
+    </curso>
+
+
+</cursos>

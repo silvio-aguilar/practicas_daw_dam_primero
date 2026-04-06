@@ -1,0 +1,46 @@
+{
+  "cursos": [
+    {
+      "id": "CUR001",
+      "nombre": "Desarrollo Web",
+      "duracion": 120,
+      "modulos": [
+        {
+          "codigo": "DWEC01",
+          "nombre": "Desarrollo Web en Entorno Cliente"
+        },
+        {
+          "codigo": "DWES01",
+          "nombre": "Desarrollo Web en Entorno Servidor"
+        },
+        {
+          "codigo": "DAW01",
+          "nombre": "Despliegue de Aplicaciones Web"
+        }
+      ]
+    },
+    {
+      "id": "CUR002",
+      "nombre": "Cyberseguridad",
+      "duracion": 240,
+      "modulos": [
+        {
+          "codigo": "CS01",
+          "nombre": "Fundamentos de Ciberseguridad"
+        },
+        {
+          "codigo": "CS02",
+          "nombre": "Seguridad en Redes"
+        },
+        {
+          "codigo": "CS03",
+          "nombre": "Criptografía"
+        },
+        {
+          "codigo": "CS04",
+          "nombre": "Gestión de Incidentes de Seguridad"
+        }
+      ]
+    }
+  ]
+}

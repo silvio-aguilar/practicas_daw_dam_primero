@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalogoProductos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:noNamespaceSchemaLocation="catalogoProductos.xsd">
+
+  <producto activo="true">
+    <idProducto>E001</idProducto>
+    <nombre>Arduino Uno R4 WiFi</nombre>
+    <descripcion>Placa de desarrollo con microcontrolador Renesas RA4M1 y conectividad WiFi/Bluetooth integrada.</descripcion>
+    <precio>34.95</precio>
+    <stock>50</stock>
+    <categoria>Microcontroladores</categoria>
+    <fechaFabricacion>2025-01-18</fechaFabricacion>
+  </producto>
+
+  <producto activo="true">
+    <idProducto>E002</idProducto>
+    <nombre>ESP32 DevKit v1</nombre>
+    <descripcion>Módulo WiFi y Bluetooth de doble núcleo con 30 pines GPIO. Ideal para IoT y automatización.</descripcion>
+    <precio>9.99</precio>
+    <stock>120</stock>
+    <categoria>Placas IoT</categoria>
+    <fechaFabricacion>2024-11-02</fechaFabricacion>
+  </producto>
+
+  <producto activo="true">
+    <idProducto>E003</idProducto>
+    <nombre>Sensor de Temperatura DHT22</nombre>
+    <descripcion>Sensor digital de temperatura y humedad con alta precisión y salida de datos en formato digital.</descripcion>
+    <precio>5.49</precio>
+    <stock>200</stock>
+    <categoria>Sensores</categoria>
+    <fechaFabricacion>2025-03-05</fechaFabricacion>
+  </producto>
+
+  <producto activo="false">
+    <idProducto>E004</idProducto>
+    <nombre>Módulo Relé 4 Canales 5V</nombre>
+    <descripcion>Módulo de relés electromecánicos de 5V para control de cargas AC/DC desde microcontroladores.</descripcion>
+    <precio>6.75</precio>
+    <stock>80</stock>
+    <categoria>Actuadores</categoria>
+    <fechaFabricacion>2024-12-20</fechaFabricacion>
+  </producto>
+
+  <producto activo="true">
+    <idProducto>E005</idProducto>
+    <nombre>Sensor Ultrasonido HC-SR04</nombre>
+    <descripcion>Sensor de distancia por ultrasonidos con rango efectivo de 2 cm a 400 cm. Ideal para robótica.</descripcion>
+    <precio>3.25</precio>
+    <stock>300</stock>
+    <categoria>Sensores</categoria>
+    <fechaFabricacion>2024-10-11</fechaFabricacion>
+  </producto>
+
+  <producto activo="true">
+    <idProducto>E006</idProducto>
+    <nombre>Fuente de Alimentación 5V 2A</nombre>
+    <descripcion>Adaptador de corriente de 5V 2A con conector micro USB y protección contra sobrecarga.</descripcion>
+    <precio>8.90</precio>
+    <stock>150</stock>
+    <categoria>Alimentación</categoria>
+    <fechaFabricacion>2025-02-22</fechaFabricacion>
+  </producto>
+
+</catalogoProductos>
+
+<!-- 
+  * Práctica UD4 Silvio Aguilar
+  * Lenguaje de Marcas
+  * 2025
+
+-->

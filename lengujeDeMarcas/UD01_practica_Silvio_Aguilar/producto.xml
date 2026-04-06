@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<!DOCTYPE producto [ 
+    <!ELEMENT producto (nombre, id, descripcion, precio, categoria)> 
+    <!ELEMENT nombre (#PCDATA)> 
+    <!ELEMENT id (#PCDATA)> 
+    <!ELEMENT descripcion (#PCDATA)> 
+    <!ELEMENT precio (#PCDATA)> 
+    <!ELEMENT categoria (#PCDATA)> 
+]> 
+ 
+<producto> 
+    <nombre>Portátil MSI Pulse 15</nombre> 
+    <id>MSI-001</id> 
+    <descripcion>Ordenador portátil de alto rendimiento para gaming y 
+desarrollo.</descripcion> 
+    <precio>1299.99</precio> 
+    <categoria>Informática</categoria> 
+</producto>
+
+<!--Creado por Silvio Aguilar-->

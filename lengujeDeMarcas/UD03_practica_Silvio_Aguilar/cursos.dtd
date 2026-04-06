@@ -1,0 +1,11 @@
+<!ELEMENT cursos (curso*)>
+
+<!ELEMENT curso (nombre,duracion,modulos)>
+<!ATTLIST curso id ID #REQUIRED>
+
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT duracion (#PCDATA)>
+
+<!ELEMENT modulos (modulo+)>
+<!ELEMENT modulo (#PCDATA)>
+<!ATTLIST modulo codigo CDATA #REQUIRED>

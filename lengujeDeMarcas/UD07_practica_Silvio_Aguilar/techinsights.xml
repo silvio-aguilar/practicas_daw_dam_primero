@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <!-- Información del canal -->
+    <title>Tech Insights</title>
+    <link>https://www.techinsights.com</link>
+    <description>El blog número 1 sobre tecnología</description>
+    <language>es</language>
+    <pubDate>Mon, 10 Feb 2025 10:00:00 +0000</pubDate>
+    <atom:link href="https://www.techinsights.com/feed.xml" rel="self" type="application/rss+xml"/>
+
+    <!-- Artículo 1 -->
+    <item>
+      <title>El auge de la Inteligencia Artificial en 2025</title>
+      <link>https://www.techinsights.com/ia-2025</link>
+      <description>Analizamos cómo la IA está transformando sectores como la salud, la educación y la industria en el último año.</description>
+      <author>silvio@email.com (Silvio Aguilar)</author>
+      <pubDate>Mon, 10 Feb 2025 09:00:00 +0000</pubDate>
+      <guid>https://www.techinsights.com/ia-2025</guid>
+    </item>
+
+    <!-- Artículo 2 -->
+    <item>
+      <title>Los mejores lenguajes de programación para aprender en 2025</title>
+      <link>https://www.techinsights.com/lenguajes-2025</link>
+      <description>Repasamos los lenguajes más demandados por las empresas tecnológicas y cuáles merece la pena aprender este año.</description>
+      <author>silvio@email.com (Silvio Aguilar)</author>
+      <pubDate>Fri, 07 Feb 2025 09:00:00 +0000</pubDate>
+      <guid>https://www.techinsights.com/lenguajes-2025</guid>
+    </item>
+
+  </channel>
+</rss>

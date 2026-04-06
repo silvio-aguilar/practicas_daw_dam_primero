@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documento XML del concesionario AutoPremium -->
+<!-- Inventario de vehículos disponibles -->
+<!-- Silvio Aguilar -->
+<concesionario nombre="AutoPremium">
+
+  <!-- Volkswagen Golf - Gasolina Manual -->
+  <coche id="C001" stock="5">
+    <marca>Volkswagen</marca>
+    <modelo>Golf</modelo>
+    <año>2020</año>
+    <precio moneda="EUR">25000.00</precio>
+    <caracteristicas>
+      <combustible>Gasolina</combustible>
+      <transmision>Manual</transmision>
+      <color>Blanco</color>
+    </caracteristicas>
+  </coche>
+
+  <!-- Audi A4 - Diesel Automático -->
+  <coche id="C002" stock="2">
+    <marca>Audi</marca>
+    <modelo>A4</modelo>
+    <año>2022</año>
+    <precio moneda="EUR">38000.00</precio>
+    <caracteristicas>
+      <combustible>Diesel</combustible>
+      <transmision>Automática</transmision>
+      <color>Negro</color>
+    </caracteristicas>
+  </coche>
+
+  <!-- Volkswagen Passat - Híbrido Automático -->
+  <coche id="C003" stock="8">
+    <marca>Volkswagen</marca>
+    <modelo>Passat</modelo>
+    <año>2021</año>
+    <precio moneda="EUR">30000.00</precio>
+    <caracteristicas>
+      <combustible>Híbrido</combustible>
+      <transmision>Automática</transmision>
+      <color>Gris</color>
+    </caracteristicas>
+  </coche>
+
+  <!-- BMW Serie 3 - Gasolina Automático -->
+  <coche id="C004" stock="3">
+    <marca>BMW</marca>
+    <modelo>Serie 3</modelo>
+    <año>2023</año>
+    <precio moneda="EUR">45000.00</precio>
+    <caracteristicas>
+      <combustible>Gasolina</combustible>
+      <transmision>Automática</transmision>
+      <color>Azul</color>
+    </caracteristicas>
+  </coche>
+
+</concesionario>

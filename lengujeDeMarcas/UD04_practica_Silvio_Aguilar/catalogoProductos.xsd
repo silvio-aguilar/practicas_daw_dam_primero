@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified">
+
+  <!-- =====================================================
+       DOCUMENTACIÓN DEL SCHEMA
+  ====================================================== -->
+  <xs:annotation>
+    <xs:appinfo>Práctica UD4 – XML Schema</xs:appinfo>
+    <xs:documentation><![CDATA[
+      Esquema para validar un catálogo de productos de una empresa minorista.
+      Define la estructura, tipos de datos y restricciones aplicadas a los elementos.
+      Autor: Silvio Aguilar
+      Fecha: 12/10/2025
+    ]]></xs:documentation>
+  </xs:annotation>
+
+  <!-- =====================================================
+       TIPOS DE DATOS PERSONALIZADOS
+  ====================================================== -->
+
+  <!-- Tipo personalizado para el precio -->
+  <xs:simpleType name="tipoPrecio">
+    <xs:restriction base="xs:decimal">
+      <xs:minInclusive value="0.01"/>
+      <xs:fractionDigits value="2"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- Tipo personalizado para la categoría -->
+  <xs:simpleType name="tipoCategoria">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Electronica"/>
+      <xs:enumeration value="Hogar"/>
+      <xs:enumeration value="Oficina"/>
+      <xs:enumeration value="Ropa"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- =====================================================
+       ELEMENTO RAÍZ
+  ====================================================== -->
+  <xs:element name="catalogoProductos">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="producto" minOccurs="1" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="idProducto" type="xs:string"/>
+              <xs:element name="nombre" type="xs:string"/>
+              <xs:element name="descripcion" type="xs:string" minOccurs="0"/>
+              <xs:element name="precio" type="tipoPrecio"/>
+              <xs:element name="stock" type="xs:positiveInteger"/>
+              <xs:element name="categoria" type="tipoCategoria"/>
+              <xs:element name="fechaFabricacion" type="xs:date"/>
+            </xs:sequence>
+            <xs:attribute name="activo" type="xs:boolean" use="optional" default="true"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>
+
+
+<!-- 
+  * Práctica UD4 Silvio Aguilar
+  * Lenguaje de Marcas
+  * 2025
+
+-->

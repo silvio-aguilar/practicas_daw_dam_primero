@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+            elementFormDefault="qualified">
+
+  <!--Raíz-->
+  <xs:element name="cursos">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="curso" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="nombre" type="xs:string"/>
+              <xs:element name="duracion">
+                <xs:simpleType>
+                  <xs:restriction base="xs:integer">
+                    <xs:minInclusive value="10"/>
+                    <xs:maxInclusive value="500"/>
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="modulos">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="modulo" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute name="codigo" use="required">
+                              <xs:simpleType>
+                                <xs:restriction base="xs:string">
+                                  <!--Patrón avanzado: 4 letras mayúsculas + 3 dígitos-->
+                                  <xs:pattern value="[A-Z]{3,4}[0-9]{3}"/>
+                                </xs:restriction>
+                              </xs:simpleType>
+                            </xs:attribute>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+
+            <!-- Atributo ID con patrón específico -->
+            <xs:attribute name="id" use="required">
+              <xs:simpleType>
+                <xs:restriction base="xs:string">
+                  <xs:pattern value="CUR[0-9]{3}"/>
+                </xs:restriction>
+              </xs:simpleType>
+            </xs:attribute>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>
